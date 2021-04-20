@@ -7,9 +7,12 @@ using UnityEngine;
 
 public class FirstPerson : MonoBehaviour
 {
-    public float speed = 6.0f;
+    public float playerSpeed = 6.0f;
+    public float jumpHeight = 1.0f;
     public const float baseSpeed = 6.0f;
     public float gravity = -9.8f;
+    private bool groundedPlayer;
+    private Vector3 playerVelocity;
 
     private CharacterController _charController;
 
@@ -22,14 +25,23 @@ public class FirstPerson : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float deltaX = Input.GetAxis("Horizontal") * speed;
-        float deltaZ = Input.GetAxis("Vertical") * speed;
-        Vector3 movement = new Vector3(deltaX, 0, deltaZ);
-        movement = Vector3.ClampMagnitude(movement, speed);
-        movement.y = gravity;
+        groundedPlayer = _charController.isGrounded;
+        if (groundedPlayer && playerVelocity.y < 0)
+        {
+            playerVelocity.y = 0f;
+        }
 
-        movement *= Time.deltaTime;
+        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         movement = transform.TransformDirection(movement);
-        _charController.Move(movement);
+        _charController.Move(movement * Time.deltaTime * playerSpeed);
+
+        if (Input.GetKey("space") && groundedPlayer)
+        {
+            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravity);
+        }
+
+        playerVelocity.y += gravity * Time.deltaTime;
+        _charController.Move(playerVelocity * Time.deltaTime);
+
     }
 }
