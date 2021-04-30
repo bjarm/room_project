@@ -7,9 +7,9 @@ using UnityEngine;
 
 public class FirstPerson : MonoBehaviour
 {
-    public float playerSpeed = 6.0f;
-    public float jumpHeight = 1.0f;
-    public const float baseSpeed = 6.0f;
+    public float playerSpeed = 12.0f;
+    public float jumpHeight = 10.0f;
+    public const float baseSpeed = 12.0f;
     public float gravity = -9.8f;
     private bool groundedPlayer;
     private Vector3 playerVelocity;
