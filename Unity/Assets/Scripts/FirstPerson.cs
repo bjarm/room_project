@@ -11,7 +11,10 @@ public class FirstPerson : MonoBehaviour
     public float jumpHeight = 10.0f;
     public const float baseSpeed = 12.0f;
     public float gravity = -9.8f;
+    public float defaultHeight = 2.0f;
+
     private bool groundedPlayer;
+    private bool crouchedPlayer = false;
     private Vector3 playerVelocity;
 
     private CharacterController _charController;
@@ -42,6 +45,24 @@ public class FirstPerson : MonoBehaviour
 
         playerVelocity.y += gravity * Time.deltaTime;
         _charController.Move(playerVelocity * Time.deltaTime);
+
+        if (Input.GetKeyDown(KeyCode.LeftControl) && groundedPlayer)
+        {
+            Vector3 NewPos = new Vector3(transform.position.x, transform.position.y + 10.0f, transform.position.z);
+
+            if (!crouchedPlayer)
+            {
+                crouchedPlayer = true;
+                defaultHeight = _charController.height;
+                _charController.height = 0.0f;
+            }
+            else
+            {
+                crouchedPlayer = false;
+                transform.position = NewPos;
+                _charController.height += defaultHeight;
+            }
+        }
 
     }
 }

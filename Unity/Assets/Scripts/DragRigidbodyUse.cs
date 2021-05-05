@@ -70,7 +70,7 @@ public class DragRigidbodyUse : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		if (Input.GetButton(GrabButton))
+		if (Input.GetKey(KeyCode.Mouse0))
 		{
 			if (!isObjectHeld)
 			{
@@ -87,7 +87,7 @@ public class DragRigidbodyUse : MonoBehaviour
 			DropObject();
 		}
 
-		if (Input.GetButton(ThrowButton) && isObjectHeld)
+		if (Input.GetKey(KeyCode.Mouse1) && isObjectHeld)
 		{
 			isObjectHeld = false;
 			objectHeld.GetComponent<Rigidbody>().useGravity = true;

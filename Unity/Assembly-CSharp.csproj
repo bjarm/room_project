@@ -63,6 +63,8 @@
     <Compile Include="Assets\Scripts\Crosshair.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets\Kitchen Asset\README.txt" />
+     <None Include="Assets\kitchen props\Readme.txt" />
      <None Include="Assets\Shaders\Window.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files (x86)\Unity\2021.1.3f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
