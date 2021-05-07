@@ -1,6 +1,8 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Crosshair
+    - DragRigidbodyUse
     - FirstPerson
     - MouseLook
     Unity.Rider.Editor.dll:
@@ -29,6 +31,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 59
+      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 65
@@ -42,9 +48,13 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2570}
+      Script: {instanceID: 2268}
     - Class: 114
-      Script: {instanceID: 3686}
+      Script: {instanceID: 2578}
+    - Class: 114
+      Script: {instanceID: 3696}
+    - Class: 114
+      Script: {instanceID: 3716}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 143
@@ -68,6 +78,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UIElements
     className: PanelRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: ff7f58b226cfe4de0dc241bd88d5a904
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Outline
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -256,6 +272,12 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
+      Hash: a238c8227690e4db0921a4e7beab18ec
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DragRigidbodyUse
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -292,7 +314,7 @@ ScriptsOnlyBuild:
     className: EnumerableTestState
   - hash:
       serializedVersion: 2
-      Hash: 663f9210a1612e89be5339c577a6cb07
+      Hash: c213f5fbb23baeba60b710ba5ee4f8ca
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FirstPerson
@@ -320,6 +342,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: e1375e37609318587991c1ed1572df77
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OnMouseTogle
   - hash:
       serializedVersion: 2
       Hash: 0fb27be807aa299702f28ad0bcad1f46
@@ -518,6 +546,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MouseLook
+  - hash:
+      serializedVersion: 2
+      Hash: ae6033a1dd102bf24f01797e495ea9a2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Crosshair
   platform: 5
   scenePathNames:
   - Assets/Project.unity
