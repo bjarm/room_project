@@ -312,8 +312,11 @@
 "Assets/Scripts/Crosshair.cs"
 "Assets/Scripts/DragRigidbodyUse.cs"
 "Assets/Scripts/FirstPerson.cs"
+"Assets/Scripts/KeyController.cs"
 "Assets/Scripts/MouseLook.cs"
+"Assets/Scripts/PauseMenuController.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/TextPrinter.cs"
 -langversion:8.0
 
 /deterministic

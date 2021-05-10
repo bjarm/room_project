@@ -63,6 +63,9 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Scripts\Crosshair.cs" />
+    <Compile Include="Assets\Scripts\TextPrinter.cs" />
+    <Compile Include="Assets\Scripts\KeyController.cs" />
+    <Compile Include="Assets\Scripts\PauseMenuController.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Kitchen Asset\README.txt" />
