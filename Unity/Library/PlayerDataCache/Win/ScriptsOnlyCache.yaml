@@ -1,6 +1,8 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BackgroundInstanceControllerComponent
+    - ButtonSound
     - Crosshair
     - DragRigidbodyUse
     - FirstPerson
@@ -9,6 +11,8 @@ ScriptsOnlyBuild:
     - OnMouseTogle
     - Outline
     - PauseMenuController
+    - SceneSwitch
+    - SoundVolumeControllerComponent
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -26,7 +30,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Project.unity:
+    Assets/Scenes/MainScene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -57,6 +61,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 104
@@ -64,44 +72,52 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1516}
+      Script: {instanceID: 1524}
     - Class: 114
-      Script: {instanceID: 1532}
+      Script: {instanceID: 1540}
     - Class: 114
-      Script: {instanceID: 1724}
+      Script: {instanceID: 1732}
     - Class: 114
-      Script: {instanceID: 1734}
+      Script: {instanceID: 1742}
     - Class: 114
-      Script: {instanceID: 2264}
+      Script: {instanceID: 1768}
     - Class: 114
-      Script: {instanceID: 2268}
+      Script: {instanceID: 2276}
     - Class: 114
-      Script: {instanceID: 2578}
+      Script: {instanceID: 2280}
     - Class: 114
-      Script: {instanceID: 2686}
+      Script: {instanceID: 2402}
     - Class: 114
-      Script: {instanceID: 2696}
+      Script: {instanceID: 2424}
     - Class: 114
-      Script: {instanceID: 2876}
+      Script: {instanceID: 2594}
     - Class: 114
-      Script: {instanceID: 3102}
+      Script: {instanceID: 2702}
     - Class: 114
-      Script: {instanceID: 3418}
+      Script: {instanceID: 2712}
     - Class: 114
-      Script: {instanceID: 3554}
+      Script: {instanceID: 2890}
     - Class: 114
-      Script: {instanceID: 3696}
+      Script: {instanceID: 2966}
+    - Class: 114
+      Script: {instanceID: 3074}
+    - Class: 114
+      Script: {instanceID: 3120}
+    - Class: 114
+      Script: {instanceID: 3436}
+    - Class: 114
+      Script: {instanceID: 3574}
     - Class: 114
       Script: {instanceID: 3716}
     - Class: 114
-      Script: {instanceID: 39552}
-    - Class: 114
-      Script: {instanceID: 64092}
+      Script: {instanceID: 3736}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 143
       Script: {instanceID: 0}
@@ -123,7 +139,70 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    - Class: 850595691
+    Assets/Scenes/StartMenuScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1540}
+    - Class: 114
+      Script: {instanceID: 1732}
+    - Class: 114
+      Script: {instanceID: 1742}
+    - Class: 114
+      Script: {instanceID: 1768}
+    - Class: 114
+      Script: {instanceID: 2276}
+    - Class: 114
+      Script: {instanceID: 2712}
+    - Class: 114
+      Script: {instanceID: 2890}
+    - Class: 114
+      Script: {instanceID: 2966}
+    - Class: 114
+      Script: {instanceID: 3074}
+    - Class: 114
+      Script: {instanceID: 3120}
+    - Class: 114
+      Script: {instanceID: 3436}
+    - Class: 114
+      Script: {instanceID: 3456}
+    - Class: 114
+      Script: {instanceID: 3574}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -224,6 +303,12 @@ ScriptsOnlyBuild:
     className: PlayerQuitHandler
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonSound
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -314,6 +399,12 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TextPrinter
+  - hash:
+      serializedVersion: 2
       Hash: 800c50acba124432abb4cf0d47202e06
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -326,7 +417,7 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
-      Hash: a238c8227690e4db0921a4e7beab18ec
+      Hash: 2f26ae82d3fe047b045f682fa69358c6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DragRigidbodyUse
@@ -342,6 +433,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
     className: PlaymodeTestsController
+  - hash:
+      serializedVersion: 2
+      Hash: e6923733bc7ee63d1bd061d7af93890d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: KeyController
+  - hash:
+      serializedVersion: 2
+      Hash: 660a617318b6f79fe042bfad82b1ff02
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenuController
   - hash:
       serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
@@ -368,7 +471,7 @@ ScriptsOnlyBuild:
     className: EnumerableTestState
   - hash:
       serializedVersion: 2
-      Hash: c213f5fbb23baeba60b710ba5ee4f8ca
+      Hash: 07dccbdd46579b9dc3ce218e418759cf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FirstPerson
@@ -428,12 +531,6 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
-      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerController
-  - hash:
-      serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -470,10 +567,22 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: 02786ec0b9e89e8139052335dc6fe557
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SoundVolumeControllerComponent
+  - hash:
+      serializedVersion: 2
       Hash: 6980e81ddc615a861309d2d659cc3760
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: bb55278c09f4b60598fabf42a7253afa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BackgroundInstanceControllerComponent
   - hash:
       serializedVersion: 2
       Hash: fd68d84f33fad85aac38f2739c0ee270
@@ -534,6 +643,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Scrollbar
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SceneSwitch
   - hash:
       serializedVersion: 2
       Hash: 5dea360fb0b147724ac344e6f399c2f3
@@ -606,25 +721,8 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Crosshair
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TextPrinter
-  - hash:
-      serializedVersion: 2
-      Hash: e6923733bc7ee63d1bd061d7af93890d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: KeyController
-  - hash:
-      serializedVersion: 2
-      Hash: 898a5aa2a93cfa06711e8c0f7387d8be
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PauseMenuController
   platform: 5
   scenePathNames:
-  - Assets/Project.unity
-  playerPath: C:/Users/ratatoskr/Documents/GitHub/room_project/Unity/Maxim.exe
+  - Assets/Scenes/StartMenuScene.unity
+  - Assets/Scenes/MainScene.unity
+  playerPath: C:/Users/favir0/Desktop/Test/Maxim.exe
