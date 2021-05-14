@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 8c400eb1804d4a84fa3828265e010923
+  - enabled: 1
+    path: Assets/Scenes/DoorOpeningScene.unity
+    guid: 0f32dd59335a35549a6f79bfcc555ded
+  - enabled: 1
+    path: Assets/Scenes/Titres.unity
+    guid: 1bb9197ce5aa34146ac252ff747c6763
   m_configObjects: {}

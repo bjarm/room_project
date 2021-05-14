@@ -14,7 +14,7 @@ public class FirstPerson : MonoBehaviour
 
     [Header ("Step sounds")]
     [SerializeField] private float timer = 0.5f;
-    private bool stop;
+    private bool stop = false;
     // step sound
     
     [Header ("FPS controller settings")]

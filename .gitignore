@@ -73,3 +73,8 @@ crashlytics-build.properties
 Unity/Maxim_Data/sharedassets0.assets.resS
 Unity/Library/PlayerDataCache/Win/Data/sharedassets0.assets.resS
 Unity/Library/PlayerDataCache/Win/Data/sharedassets1.assets.resS
+Unity/Logs/AssetImportWorker0-prev.log
+*.log
+*.log
+*.log
+Unity/Logs/shadercompiler-UnityShaderCompiler.exe5.log

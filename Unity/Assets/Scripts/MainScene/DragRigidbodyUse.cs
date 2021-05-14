@@ -38,6 +38,8 @@ public class TagsClass
 	public string m_InteractTag = "Interact";
 	public string m_InteractItemsTag = "InteractItem";
 	public string m_DoorsTag = "Door";
+	public string m_HandleTag = "Handle";
+	public string m_RefrDoorTag = "RefrDoor";
 }
 
 public class DragRigidbodyUse : MonoBehaviour
@@ -45,9 +47,12 @@ public class DragRigidbodyUse : MonoBehaviour
 	// sound settings
 	[Header ("Sound settings")]
 	[SerializeField] private AudioClip door;
+	[SerializeField] private AudioClip refrDoor;
 	[SerializeField] private AudioClip item;
+	[SerializeField] private AudioClip handle;
 	[SerializeField] private float _doorVolume;
 	[SerializeField] private float _itemVolume;
+	[SerializeField] private float _handleVolume;
 	// sound settings
 	[Header ("Grab settings")]
 	public GameObject playerCam;
@@ -168,6 +173,30 @@ public class DragRigidbodyUse : MonoBehaviour
 				distance = DoorGrab.m_DoorDistance;
 				maxDistanceGrab = DoorGrab.m_DoorMaxGrab;
 			}
+			if (hit.collider.tag == Tags.m_RefrDoorTag && tryPickupObject)
+			{
+
+				isObjectHeld = true;
+				objectHeld.GetComponent<Rigidbody>().useGravity = true;
+				objectHeld.GetComponent<Rigidbody>().freezeRotation = false;
+				// sound settings
+				objectHeld.AddComponent<AudioSource>();
+				objectHeld.GetComponent<AudioSource>().volume = _doorVolume;
+				objectHeld.GetComponent<AudioSource>().PlayOneShot(refrDoor);
+				//soudn settings
+				PickupRange = DoorGrab.m_DoorPickupRange;
+				ThrowStrength = DoorGrab.m_DoorThrow;
+				distance = DoorGrab.m_DoorDistance;
+				maxDistanceGrab = DoorGrab.m_DoorMaxGrab;
+			}
+			if (hit.collider.tag == Tags.m_HandleTag && tryPickupObject)
+			{
+				// sound settings
+				isObjectHeld = true;
+				objectHeld.GetComponent<AudioSource>().volume = _handleVolume;
+				objectHeld.GetComponent<AudioSource>().PlayOneShot(handle);
+				// sound settings
+			}
 		}
 	}
 
@@ -192,6 +221,7 @@ public class DragRigidbodyUse : MonoBehaviour
 		tryPickupObject = false;
 		objectHeld.GetComponent<Rigidbody>().useGravity = true;
 		objectHeld.GetComponent<Rigidbody>().freezeRotation = false;
+		objectHeld.GetComponent<Rigidbody>().AddForce(transform.up * (-10) * objectHeld.GetComponent<Rigidbody>().mass, ForceMode.Impulse);
 		objectHeld = null;
 	}
 

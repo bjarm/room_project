@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class PauseMenuController : MonoBehaviour
 {
     public GameObject Menu;
-    public GameObject Character; // ������� ��� ��������� �������� ������
+    public GameObject Character;
     public bool isPaused = false;
     public float timer;
 
@@ -23,7 +23,7 @@ public class PauseMenuController : MonoBehaviour
 
     [Header("Parameters")]
     [SerializeField] private float volume;
-
+    //sound settings
     // Update is called once per frame
     void Update()
     {
@@ -38,33 +38,35 @@ public class PauseMenuController : MonoBehaviour
             timer = 1.0f;
         }
 
-        if (Input.GetKey(KeyCode.Escape) && !isPaused)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
+            if(!isPaused){
+            isPaused = true;
             Menu.SetActive(true);
             //sound settings
             if (PlayerPrefs.HasKey(this.saveVolumeKey))
             {
-            this.volume = PlayerPrefs.GetFloat(this.saveVolumeKey);
-            this.GetComponent<AudioSource>().volume = this.volume;
+                this.volume = PlayerPrefs.GetFloat(this.saveVolumeKey);
+                this.GetComponent<AudioSource>().volume = this.volume;
 
-            GameObject sliderObj = GameObject.FindWithTag(this.sliderTag);
-            if(sliderObj != null)
-            {
-            this.slider = sliderObj.GetComponent<Slider>();
-            this.slider.value = this.volume;
-            this.GetComponent<AudioSource>().volume = this.volume;
+                GameObject sliderObj = GameObject.FindWithTag(this.sliderTag);
+                if(sliderObj != null)
+                {
+                    this.slider = sliderObj.GetComponent<Slider>();
+                    this.slider.value = this.volume;
+                    this.GetComponent<AudioSource>().volume = this.volume;
+                }
             }
-        }
             //sound settings
 
             transform.gameObject.GetComponent<Crosshair>().m_ShowCursor = true;
-            isPaused = true;
             transform.gameObject.GetComponent<MouseLook>().axes = MouseLook.RotationAxes.StopRotation;
             Character.GetComponent<MouseLook>().axes = MouseLook.RotationAxes.StopRotation;
-        }
-        else if (Input.GetKey(KeyCode.Escape) && isPaused)
-        {
-            ResumeGame();
+            }
+            else
+            {
+                ResumeGame();
+            }
         }
     }
 
@@ -86,5 +88,6 @@ public class PauseMenuController : MonoBehaviour
         System.Threading.Thread.Sleep(1000);
         Application.Quit();
     }
+
 }
 

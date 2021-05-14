@@ -6,30 +6,33 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedScenePath-0:
-      value: 2242470311464673040904061525561e1f03112522072036242a1803f0ef242badcb3feeef2e3a381d07e233373d0431f7441c05ff1f13
-      flags: 0
-    RecentlyUsedScenePath-1:
-      value: 224247031146466b1f01062713371105181e0c33
-      flags: 0
-    RecentlyUsedScenePath-2:
-      value: 2242470311464670041a0f2a152d1f3105041d3e63032f242e21183dc6e53937acf238e0f323
-      flags: 0
-    RecentlyUsedScenePath-3:
       value: 224247031146466a2c312e2d1f284c5f321215256c3b2535232c5217e7ed3b76f7e93ffdfe
       flags: 0
-    RecentlyUsedScenePath-4:
+    RecentlyUsedScenePath-1:
       value: 22424703114646680e0b0227036c6c111b07142f1f2b233e2867083debf42d
       flags: 0
-    RecentlyUsedScenePath-5:
+    RecentlyUsedScenePath-2:
       value: 22424703114646680e0b0227036c6f02191d1d293866333e243d04
       flags: 0
-    RecentlyUsedScenePath-6:
+    RecentlyUsedScenePath-3:
       value: 224247031146467c010f1f3150771f201714136a0a1a0315620d183eeddf1334e3f425bdd73b3c377717e1351027
       flags: 0
+    RecentlyUsedScenePath-4:
+      value: 22424703114646760c1a09301922535f21180a2628052724283b1432eef3122ae7e279cff53f3a183c0fe00f073b0f00c11e0805f20a180f2206fc0a14ed5e061fcc0cdc
+      flags: 0
+    RecentlyUsedScenePath-5:
+      value: 22424703114646760c1a09301922535f21180a2628052724283b1432eef3122ae7e279cff53f3a183c0fe00f073b0f00c5273a03f70f0f195f1bf30705e6
+      flags: 0
+    RecentlyUsedScenePath-6:
+      value: 22424703114646680e0b0227036c6b1902051d39623d28393930
+      flags: 0
     RecentlyUsedScenePath-7:
-      value: 22424703114646680e0b0227036c6c0417050c07292633032e2c1336acf53a31f6fe
+      value: 22424703114646680e0b0227036c7b1f1905373a29262f3e2a1a1e36ece57a2decee22f0
       flags: 0
     RecentlyUsedScenePath-8:
+      value: 22424703114646680e0b0227036c6c0417050c07292633032e2c1336acf53a31f6fe
+      flags: 0
+    RecentlyUsedScenePath-9:
       value: 22424703114646680e0b0227036c72111f192b292926237e38271427fb
       flags: 0
     vcSharedLogLevel:
