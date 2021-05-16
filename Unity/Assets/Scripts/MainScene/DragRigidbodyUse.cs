@@ -73,6 +73,7 @@ public class DragRigidbodyUse : MonoBehaviour
 	private GameObject objectHeld;
 	private bool isObjectHeld;
 	private bool tryPickupObject;
+	private GameObject obj;
 
 	void Start()
 	{
@@ -193,8 +194,12 @@ public class DragRigidbodyUse : MonoBehaviour
 			{
 				// sound settings
 				isObjectHeld = true;
+				obj = GameObject.Find("Room");
+				if(!obj.GetComponent<KeyController>().isKeyTaken)
+				{
 				objectHeld.GetComponent<AudioSource>().volume = _handleVolume;
 				objectHeld.GetComponent<AudioSource>().PlayOneShot(handle);
+				}
 				// sound settings
 			}
 		}

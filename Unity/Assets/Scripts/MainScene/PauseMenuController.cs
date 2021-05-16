@@ -9,7 +9,6 @@ public class PauseMenuController : MonoBehaviour
     public GameObject Menu;
     public GameObject Character;
     public bool isPaused = false;
-    public float timer;
 
     //sound settings
     [Header("Components")]
@@ -27,16 +26,6 @@ public class PauseMenuController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Time.timeScale = timer;
-
-        if (isPaused)
-        {
-            timer = 0;
-        }
-        else
-        {
-            timer = 1.0f;
-        }
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -60,6 +49,8 @@ public class PauseMenuController : MonoBehaviour
             //sound settings
 
             transform.gameObject.GetComponent<Crosshair>().m_ShowCursor = true;
+            transform.gameObject.GetComponent<Crosshair>().m_UseReticle = false;
+            transform.gameObject.GetComponent<Crosshair>().m_bIsCrosshairVisible = false;
             transform.gameObject.GetComponent<MouseLook>().axes = MouseLook.RotationAxes.StopRotation;
             Character.GetComponent<MouseLook>().axes = MouseLook.RotationAxes.StopRotation;
             }
@@ -74,14 +65,11 @@ public class PauseMenuController : MonoBehaviour
     {
         Menu.SetActive(false);
         isPaused = false;
+        transform.gameObject.GetComponent<Crosshair>().m_UseReticle = true;
+        transform.gameObject.GetComponent<Crosshair>().m_bIsCrosshairVisible = true;
         transform.gameObject.GetComponent<Crosshair>().m_ShowCursor = false;
         transform.gameObject.GetComponent<MouseLook>().axes = MouseLook.RotationAxes.MouseY;
         Character.GetComponent<MouseLook>().axes = MouseLook.RotationAxes.MouseX;
-    }
-    public void ExitToMainMenu()
-    {
-        System.Threading.Thread.Sleep(1000);
-        SceneManager.LoadScene(0);
     }
     public void ExitGame()
     {

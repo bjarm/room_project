@@ -24,10 +24,12 @@ public class KeyController : MonoBehaviour
     public GameObject door;
     public GameObject room;
     public Text questPanel;
-
+    
     public bool isKeyTaken = false;
 
     private float PickupRange = 30f;
+
+    private GameObject obj;
 
     // Start is called before the first frame update
     void Start()
@@ -59,8 +61,10 @@ public class KeyController : MonoBehaviour
                 }
                 else if (hit.collider.gameObject == door && isKeyTaken)
                 {
-                    SceneManager.LoadScene(2);
                     Debug.Log("SVOBODA");
+                    obj = GameObject.Find("LevelChanger");
+                    obj.GetComponent<SceneChanger>().levelToLoad = 2;
+                    obj.GetComponent<SceneChanger>().FadeToLevel();
                 }
             }
         }

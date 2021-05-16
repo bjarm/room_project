@@ -13,6 +13,7 @@ TagManager:
   - BG_MUSIC_CREATED
   - Handle
   - RefrDoor
+  - SceneChanger
   layers:
   - Default
   - TransparentFX

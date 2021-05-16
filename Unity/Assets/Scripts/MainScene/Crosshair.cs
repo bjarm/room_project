@@ -10,8 +10,9 @@ public class Crosshair : MonoBehaviour
 	public bool m_DefaultReticle;
 	public bool m_UseReticle;
 	public bool m_ShowCursor = false;
+	public bool m_bIsCrosshairVisible = true;
+	
 
-	private bool m_bIsCrosshairVisible = true;
 	private Rect m_crosshairRect;
 	private Ray playerAim;
 	private Camera playerCam;

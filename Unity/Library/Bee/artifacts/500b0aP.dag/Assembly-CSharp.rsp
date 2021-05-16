@@ -279,12 +279,15 @@
 -r:"Library/Bee/artifacts/500b0aP.dag/Unity.TextMeshPro.ref.dll"
 -r:"Library/Bee/artifacts/500b0aP.dag/Unity.Timeline.ref.dll"
 -r:"Library/Bee/artifacts/500b0aP.dag/UnityEngine.UI.ref.dll"
+"Assets/Fonts/Bubbles/Script/scriptTexttest.cs"
 "Assets/QuickOutline/Scripts/OnMouseTogle.cs"
 "Assets/QuickOutline/Scripts/Outline.cs"
 "Assets/Scripts/DoorOpening/SceneForwarder.cs"
 "Assets/Scripts/General/BackgroundInstanceControllerComponent.cs"
 "Assets/Scripts/General/ButtonSound.cs"
+"Assets/Scripts/General/SceneChanger.cs"
 "Assets/Scripts/General/SoundVolumeControllerComponent.cs"
+"Assets/Scripts/MainScene/CharacterDialogue.cs"
 "Assets/Scripts/MainScene/Crosshair.cs"
 "Assets/Scripts/MainScene/DragRigidbodyUse.cs"
 "Assets/Scripts/MainScene/FirstPerson.cs"
@@ -293,7 +296,8 @@
 "Assets/Scripts/MainScene/PauseMenuController.cs"
 "Assets/Scripts/MainScene/TextPrinter.cs"
 "Assets/Scripts/StartMenu/CursoreCheck.cs"
-"Assets/Scripts/StartMenu/SceneSwitch.cs"
+"Assets/Scripts/StartMenu/ImageChanger.cs"
+"Assets/Scripts/StartMenu/SceneCloser.cs"
 -langversion:8.0
 
 /deterministic
