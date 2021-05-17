@@ -24,6 +24,9 @@ public class KeyController : MonoBehaviour
     public GameObject door;
     public GameObject room;
     public Text questPanel;
+
+    [Header ("Dialogue controller")]
+	public GameObject objText;
     
     public bool isKeyTaken = false;
 
@@ -56,6 +59,7 @@ public class KeyController : MonoBehaviour
                     Debug.Log("VZYAL KLUCH");
                     room.GetComponent<AudioSource>().volume = _msVolume;
                     room.GetComponent<AudioSource>().PlayOneShot(misterySound);
+                    objText.GetComponent<TextPrinter>().playDialogue(3);
                     knockStart = true;
 
                 }
@@ -83,6 +87,7 @@ public class KeyController : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(knockTimer, 25));
         door.GetComponent<AudioSource>().volume = Random.Range(_knockVolume, 1);
         door.GetComponent<AudioSource>().PlayOneShot(knock);
+        objText.GetComponent<TextPrinter>().playDialogue(4);
         stop = false;
     }
     // sound settings

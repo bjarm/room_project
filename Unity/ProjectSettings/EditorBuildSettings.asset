@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/DoorOpeningScene.unity
     guid: 0f32dd59335a35549a6f79bfcc555ded
   - enabled: 1
-    path: Assets/Scenes/Titres.unity
+    path: Assets/Scenes/GameEnding.unity
     guid: 1bb9197ce5aa34146ac252ff747c6763
+  - enabled: 1
+    path: Assets/Scenes/Titres.unity
+    guid: 7328ce6588311c740ae64798e746d443
   m_configObjects: {}

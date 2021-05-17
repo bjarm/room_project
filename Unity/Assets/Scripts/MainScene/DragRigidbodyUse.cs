@@ -50,9 +50,12 @@ public class DragRigidbodyUse : MonoBehaviour
 	[SerializeField] private AudioClip refrDoor;
 	[SerializeField] private AudioClip item;
 	[SerializeField] private AudioClip handle;
+	[SerializeField] private AudioClip itemDrop;
 	[SerializeField] private float _doorVolume;
 	[SerializeField] private float _itemVolume;
 	[SerializeField] private float _handleVolume;
+	[SerializeField] private float _dropVolume;
+	[SerializeField] private float _dropDelay;
 	// sound settings
 	[Header ("Grab settings")]
 	public GameObject playerCam;
@@ -63,6 +66,8 @@ public class DragRigidbodyUse : MonoBehaviour
 	public ItemGrabClass ItemGrab = new ItemGrabClass();
 	public DoorGrabClass DoorGrab = new DoorGrabClass();
 	public TagsClass Tags = new TagsClass();
+	[Header ("Dialogue controller")]
+	public GameObject objText;
 
 	private float PickupRange = 30f;
 	private float ThrowStrength = 50f;
@@ -125,6 +130,10 @@ public class DragRigidbodyUse : MonoBehaviour
 				objectHeld.AddComponent<AudioSource>();
 				objectHeld.GetComponent<AudioSource>().volume = _itemVolume;
 				objectHeld.GetComponent<AudioSource>().PlayOneShot(item);
+				objectHeld.AddComponent<CollisionSound>();
+				objectHeld.GetComponent<CollisionSound>().delay = _dropDelay;
+				objectHeld.GetComponent<CollisionSound>().itemDrop = itemDrop;
+				objectHeld.GetComponent<AudioSource>().volume = _dropVolume;
 				//sound settings
 				if (ObjectGrab.m_FreezeRotation)
 				{
@@ -197,6 +206,7 @@ public class DragRigidbodyUse : MonoBehaviour
 				obj = GameObject.Find("Room");
 				if(!obj.GetComponent<KeyController>().isKeyTaken)
 				{
+				objText.GetComponent<TextPrinter>().playDialogue(2);
 				objectHeld.GetComponent<AudioSource>().volume = _handleVolume;
 				objectHeld.GetComponent<AudioSource>().PlayOneShot(handle);
 				}
