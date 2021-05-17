@@ -288,6 +288,7 @@
 "Assets/Scripts/General/ButtonSound.cs"
 "Assets/Scripts/General/SceneChanger.cs"
 "Assets/Scripts/General/SoundVolumeControllerComponent.cs"
+"Assets/Scripts/MainScene/CollisionSound.cs"
 "Assets/Scripts/MainScene/Crosshair.cs"
 "Assets/Scripts/MainScene/DragRigidbodyUse.cs"
 "Assets/Scripts/MainScene/FirstPerson.cs"

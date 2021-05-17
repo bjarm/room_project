@@ -325,7 +325,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 715ae97a176622c47ab2550a3cf69dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voice: []
+  voice:
+  - {fileID: 8300000, guid: c23d096ec74d9854ea31393df26da82b, type: 3}
+  - {fileID: 8300000, guid: 884cb928f01d7224f9736b2499dad5d2, type: 3}
+  - {fileID: 8300000, guid: befd5a260ba9fd743a1f1ff0bee63e56, type: 3}
+  - {fileID: 8300000, guid: 4066d6f25514a1a40aeefba49696c014, type: 3}
+  - {fileID: 8300000, guid: b71359e6017e0bc44b877faa122164b9, type: 3}
+  - {fileID: 8300000, guid: 637bbc1d9592de9489a0c312d748002b, type: 3}
+  cam: {fileID: 1184063677}
   dPanel: {fileID: 1051440555}
   dText: {fileID: 1338831512}
   canv: {fileID: 1027312490}

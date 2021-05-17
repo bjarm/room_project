@@ -39,9 +39,11 @@ public class DoorOpeningController : MonoBehaviour
 
     IEnumerator playSound()
     {
-        yield return new WaitForSeconds(clip.length);
-        anim.SetTrigger("startActivity");
+        yield return new WaitForSeconds(clip.length/8);
         objText.GetComponent<TextPrinter>().playDialogue(5);
+        yield return new WaitForSeconds(clip.length * 7/8);
+        anim.SetTrigger("startActivity");
+        objText.GetComponent<TextPrinter>().playDialogue(6);
         _camera.GetComponent<AudioSource>().PlayOneShot(forest);
         yield return new WaitForSeconds(timer);
         SceneManager.LoadScene(scene);
