@@ -23,7 +23,7 @@ public class TextPrinter : MonoBehaviour
     private string text3 = "Теперь я смогу открыть эту дверь";
     private string text4 = "Кто бы это мог быть?";
     private string text5 = "<<Звук открытия двери.....................>>";
-    private string text6 = "Что это!? Где я оказался?.......";
+    private string text6 = "<<Звук разочарования......................>>";
 
     private bool stop = false;
 

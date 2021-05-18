@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 16188
+  controlID: 435
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 16189
+  controlID: 436
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 16156
+  controlID: 415
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -186,8 +186,8 @@ MonoBehaviour:
     y: 0
     width: 347.2
     height: 349.6
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -224,7 +224,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 6072feffde73feff1a74feff1675feff7c75feff8075feffc87afeff407bfeff4e7dfeff887dfeff847efeffea7efeffee7efeff3684feffa884feff1089feffeca1feff3ea7feff5eadfeff98adfeff98aefeff02affeff0aaffeff56b4feffd2b4feffbac1feff9ef9ffffd4faffff54fbffff7e4400003c460000a4ef000074f90000
+      m_ExpandedIDs: 54edffff8eedffff8eeefffff8eeffff00efffff4cf4ffffc8f4ffff54fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -313,9 +313,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 147.24956, y: -9.716259, z: 81.949165}
+    m_Target: {x: 799.74457, y: 523.6554, z: 2.2753143}
     speed: 2
-    m_Value: {x: 147.24956, y: -9.716259, z: 81.949165}
+    m_Value: {x: 799.74457, y: 523.6554, z: 2.2753143}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -362,13 +362,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.023397464, y: 0.9705263, z: -0.21609028, w: 0.106919274}
+    m_Target: {x: -0.0029648934, y: -0.0013384306, z: -0.00037267918, w: 1.0002929}
     speed: 2
-    m_Value: {x: 0.023390502, y: 0.9702375, z: -0.21602598, w: 0.10688746}
+    m_Value: {x: -0.0029640093, y: -0.0013380315, z: -0.00037256806, w: 0.99999464}
   m_Size:
-    m_Target: 205.26108
+    m_Target: 518.8135
     speed: 2
-    m_Value: 205.26108
+    m_Value: 518.8135
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -487,22 +487,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts/MainScene
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts/MainScene
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\favir0\Documents\GitHub\room_project\Unity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 219.6}
-    m_SelectedIDs: 42600000
-    m_LastClickedID: 24642
-    m_ExpandedIDs: 00000000d0500000d2500000d4500000d6500000d8500000da500000dc500000de500000e050000000ca9a3b
+    scrollPos: {x: 0, y: 299.6}
+    m_SelectedIDs: 84440000
+    m_LastClickedID: 17540
+    m_ExpandedIDs: 00000000ec430000ee430000f0430000f2430000f4430000f6430000f8430000fa430000fc43000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -530,7 +530,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d0500000d2500000d4500000d6500000d8500000da500000dc500000de500000e050000000ca9a3b
+    m_ExpandedIDs: 00000000ec430000ee430000f0430000f2430000f4430000f6430000f8430000fa430000fc43000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -555,9 +555,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 9a150100
-    m_LastClickedInstanceID: 71066
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: d2080000
+    m_LastClickedInstanceID: 2258
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300009c3400005a340000d43b0000723400009a390000de520000e0100000d4100000244f0000f844000080a80000000000009049000094010100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -792,8 +792,8 @@ MonoBehaviour:
     y: 0
     width: 477.59998
     height: 731
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -833,8 +833,8 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 71066
-  m_LastVerticalScrollValue: 874.4
+  m_LastInspectedObjectInstanceID: 2258
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
